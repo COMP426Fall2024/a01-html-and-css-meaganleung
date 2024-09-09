@@ -1,0 +1,152 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f1e3; 
+    color: #2f3640;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 45px;
+    text-align: center;
+    color: #353b48;
+    border-bottom: 3px solid #718093;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #40739e;
+    border-bottom: 2px solid #563e2c;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    color: #40739e;
+    background-color: #e7e7e7;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 40%;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    max-width: 32%; 
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin-top: 20px;
+    background-color: #dcdde1;
+}
+
+table, th, td {
+    border: 2px solid #7f8fa6;
+}
+
+table td:first-child, table th:first-child {
+    width: 10%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #273c75;
+    color: white;
+}
+
+/* guess select thing */
+label {
+    font-size: 20px;
+    font-family: 'Garamond', serif;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #7f8fa6;
+    border-radius: 5px;
+}
+
+ul {
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    padding-left: 20px;
+}
+
+button {
+    background-color: #be997e;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #563e2c;
+    border: 2px solid #1e272e;
+    color: white;
+}
+
+#message {
+    font-weight: bold;
+    color: #40739e;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* hover */
+a {
+    color: #487eb0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9c88ff;
+    text-decoration: underline;
+}
+
+div {
+    margin:auto;
+    float: right;
+  }
+
+
+#main-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table-header {
+    background-color: #353b48;
+    color: white;
+}

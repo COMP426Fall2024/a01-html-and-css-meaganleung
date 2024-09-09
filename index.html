@@ -1,3 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Oedipus</title>
+    <link rel="stylesheet" href="oedipus.css">
+    <script>
+        function showMessage() {
+            var dropdown = document.getElementById("guess");
+            var selectedValue = dropdown.value;
+            var message = document.getElementById("message");
+
+            if (selectedValue === "option1") {
+                message.innerHTML = "You chose Yes. Oedipus' fate did become reality! Go to the next page to learn how...";
+            } else if (selectedValue === "option2") {
+                message.innerHTML = "You chose No. Unfortunately, Oedipus couldn't escape his fate... but what happened?";
+            } else if (selectedValue === "option3") {
+                message.innerHTML = "You chose Maybe. Keep reading to find out!";
+            } else {
+                message.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1 style="font-family: cursive;">
+    The Story of Oedipus 
+</h1>
+
+<a href="https://www.britannica.com/topic/Oedipus-Greek-mythology">
+    <img src="oedipus.jpg" style="width: 22%" align="right">
+</a>
+
 <p>
-    hello world!
+    The story of Oedipus is a tragic tale from Greek mythology, most famously told in Sophocles' play Oedipus Rex. 
+    <br><br>
+    Oedipus, the king of Thebes, is prophesied at birth to kill his father and marry his mother. But will his <b>fate</b> 
+    become <b>reality</b>?
 </p>
+
+<br><br>
+
+<label for="guess">What do you think?</label>
+
+<select name="Guess" id="guess" onchange="showMessage()">
+  <option value="">-- Select an option --</option>
+  <option value="option1">Yes</option>
+  <option value="option2">No</option>
+  <option value="option3">Maybe</option>
+</select>
+
+<p id="message"></p>
+
+<br><br>
+
+<h2>Characters</h2>
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Oedipus</td>
+      <td>Protagonist and king of Thebes, doomed by fate to kill his father and marry his mother.</td>
+    </tr>
+    <tr>
+      <td>Jocasta</td>
+      <td>Oedipus' wife and queen of Thebes.</td>
+    </tr>
+    <tr>
+      <td>Laius</td>
+      <td>The former king of Thebes and Oedipus' biological father.</td>
+    </tr>
+    <tr>
+      <td>Creon</td>
+      <td>Jocasta's brother and Oedipus' trusted advisor.</td>
+    </tr>
+    <tr>
+      <td>Tiresias</td>
+      <td>A blind prophet with the gift of foresight.</td>
+    </tr>
+    <tr>
+      <td>The Chorus</td>
+      <td>A group of Theban elders who represent the voice of the people.</td>
+    </tr>
+</table>
+
+<h2>Key Themes</h2>
+<ul style="text-align: left;">
+    <li>Fate vs. Free Will</li>
+    <li>Knowledge and Ignorance</li>
+    <li>Guilt and Innocence</li>
+    <li>Blindness and Sight</li>
+</ul>
+
+<h2>Learn the story...</h2>
+<a href="prophecy.html"><button type="button">1. The Prophecy</button></a>
+<a href="downfall.html"><button type="button">2. Downfall</button></a>
+
+</body>
+</html>

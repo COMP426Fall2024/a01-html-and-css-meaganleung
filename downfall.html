@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Oedipus</title>
+    <link rel="stylesheet" href="oedipus.css">
+    <script>
+        function navigateToWebsite() {
+            var dropdown = document.getElementById("guess");
+            var selectedValue = dropdown.value;
+
+            // Only navigate if a valid selection is made
+            if (selectedValue) {
+                window.location.href = selectedValue;  // Redirect to the selected URL
+            } else {
+                alert("Please select a tragedy from the dropdown.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>The Downfall of Oedipus</h1>
+
+    <h3>The Plague of Thebes</h3>
+    <p>
+        Years after Oedipus became the king of Thebes, the city was ravaged by a plague. The people of Thebes looked to their king, Oedipus, for answers. Determined to save his kingdom, Oedipus sent his brother-in-law Creon to consult the Oracle of Delphi once again. The Oracle revealed that the plague was a result of the unpunished murder of the former king, Laius.
+    </p>
+
+    <a href="https://greektraveltellers.com/blog/30-of-the-most-famous-tales-from-greek-mythology">
+        <img src="quest.jpg" style="width:20%" align="left" alt="Greek Tragedy Statue">
+    </a>
+
+    <h3>Oedipus' Quest for the Truth</h3>
+    <p>
+        Oedipus vowed to rid Thebes of the curse by finding the murderer of Laius. 
+        He did not know, however, that he was searching for himself. Oedipus interrogated witnesses, 
+        consulted prophets, and called for anyone with information to come forward. All the while, 
+        his true identity began to unravel.
+    </p>
+
+    <h3>The Revelations</h3>
+    <p>
+        Piece by piece, the horrific truth was revealed: Oedipus was the very man he was searching for. 
+        The stranger he had killed years ago on the road to Thebes was none other than his father, Laius. 
+        The woman he had married and fathered children with was his mother, Jocasta. The prophecy he had 
+        tried so hard to avoid had come true, sealing his fate.
+    </p>
+
+    <a href="https://www.thecollector.com/oedipus-rex-artworks/">
+        <img src="exile.jpg" style="width: 20%" align="right" alt="Greek Tragedy Statue">
+    </a>
+
+    <h3>Jocasta's Despair and Oedipus' Punishment</h3>
+    <p>
+        Upon realizing the truth, Jocasta, overwhelmed with grief and horror, took her own life. Oedipus, 
+        stricken with guilt and shame, blinded himself as punishment for his sins. Unable to bear the sight 
+        of the world he had destroyed, Oedipus chose exile from Thebes, wandering blind and broken, accompanied only by his daughters.
+    </p>
+
+    <h3>The Legacy of Oedipus</h3>
+    <p>
+        Oedipus' story stands as a testament to the inescapable nature of fate and the consequences of human pride. 
+        His tragic downfall teaches us that no man, no matter how powerful, can escape the will of the gods. Oedipus 
+        sought to defy his destiny, but in the end, his own actions fulfilled it. 
+    </p>
+
+    <br>
+
+    <h2><b>Lessons Learned:</b></h2>
+        <ul style="text-align: left;">
+            <li>The Inescapability of Fate</li>
+            <li>The Danger of Hubris (Excessive Pride)</li>
+            <li>Self-Awareness and Responsibility</li>
+            <li>The Fragility of Power and Success</li>
+          </ul>
+
+    <br>
+
+    <h2>Similar Greek Tragedies</h2>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Antigone <br> by Sophocles</td>
+          <td>This is a continuation of the Oedipus story, focusing on his daughter Antigone. 
+            After the death of her brothers Eteocles and Polynices, Antigone defies King Creon's 
+            order not to bury Polynices.</td>
+        </tr>
+        <tr>
+          <td>Agamemnon <br> by Aeschylus</td>
+          <td>Part of the Oresteia trilogy, this tragedy tells the story of King Agamemnon's return 
+            from the Trojan War, only to be murdered by his wife Clytemnestra as revenge for sacrificing 
+            their daughter, Iphigenia.</td>
+        <tr>
+          <td>Medea <br> by Euripides</td>
+          <td>Medea, the wife of Jason (of the Argonauts), is enraged when Jason abandons her and their 
+            children for another woman. In a devastating act of revenge, she murders their children and 
+            Jason's new bride. </td>
+        <tr>
+          <td>The Bacchae <br> by Euripides</td>
+          <td>The story follows Dionysus, the god of wine and ecstasy, as he returns to Thebes to punish King 
+            Pentheus for not acknowledging him as a god. Pentheus' refusal leads to his violent death at the 
+            hands of his own mother and the Bacchae (Dionysus' followers)</td>
+      </table>
+
+    <br>
+
+    <label for="guess">More on these tragedies:</label>
+    <select name="Guess" id="guess">
+        <option value="">--Select a tragedy--</option>
+        <option value="https://www.britannica.com/topic/Antigone-by-Sophocles">Antigone by Sophocles</option>
+        <option value="https://www.britannica.com/topic/Oresteia#ref1115652">Agamemnon by Aeschylus</option>
+        <option value="https://www.britannica.com/topic/Medea-play-by-Euripides">Medea by Euripides</option>
+        <option value="https://www.britannica.com/topic/Bacchae">The Bacchae by Euripides</option>
+    </select>
+
+    <button onclick="navigateToWebsite()">Go to Page</button>
+
+    <br>
+    <br>
+
+    <a href="prophecy.html"><button type="button">← Back to Prophecy</button></a>
+    <a href="index.html"><button type="button">Back to Home</button></a>
+
+    <div>
+        <a href="https://www.britannica.com/topic/Oedipus-Greek-mythology"><p>Click here for more on Oedipus!</p></a>
+    </div>
+
+</body>
+</html>

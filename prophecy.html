@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Oedipus</title>
+    <link rel="stylesheet" href="oedipus.css">
+    <script>
+        function showMessage() {
+            var dropdown = document.getElementById("guess");
+            var selectedValue = dropdown.value;
+            var message = document.getElementById("message");
+
+            if (selectedValue === "option1") {
+                message.innerHTML = "Not quite, click downfall to find out.";
+            } else if (selectedValue === "option2") {
+                message.innerHTML = "Not quite, click downfall to find out.";
+            } else if (selectedValue === "option3") {
+                message.innerHTML = "Not quite, click downfall to find out.";
+            } else if (selectedValue === "option4") {
+                message.innerHTML = "Yes! Click downfall to hear how.";
+            } else if (selectedValue === "option5") {
+                message.innerHTML = "Not quite, click downfall to find out.";
+            } else {
+                message.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>The Prophecy</h1>
+
+    <a href="https://www.dreamstime.com/royalty-free-stock-image-old-book-image17580496">
+        <img src="book.jpg" style="width:34%" align="left">
+    </a>
+
+    <h3>Prophecy Origin</h3>
+    <p>Before the birth of Oedipus, King Laius, ruler of Thebes, sought the Oracle of Delphi to understand his fate. 
+        The Oracle warned him that <b>his own son would one day kill him, marry his own mother, and bring ruin to his kingdom</b>. Terrified of this future, 
+        King Laius made the fateful decision to abandon his newborn son to avoid the prophecy from coming true. </p>
+
+    <h3>The Oracle of Delphi</h3>
+    <ul style="text-align: left;">
+        <li>One of the most revered and powerful figures in ancient Greece. </li>
+        <li><a href="https://www.britannica.com/video/180008/oracle-Delphi">The Oracle</a> was believed to communicate directly with the god Apollo, offering prophecies that shaped fates.</li>
+        <li>When Laius received his prophecy, he knew that attempting to escape it would be futile, yet still took drastic measures to avoid it.</li>
+      </ul>
+
+    <a href="https://www.greeklegendsandmyths.com/agelaus.html">
+        <img src="abandon.jpeg" style="width:25%" align="right">
+    </a>
+
+    <h3>The Abandonment of Oedipus</h3>
+    <p>To prevent the prophecy, Laius and Jocasta ordered their infant son to be left to die on Mount Cithaeron. However, fate intervened 
+        when a shepherd found the child and took him to the royal family of Corinth.
+    </p>
+
+    <h3>The Inevitable Fate</h3>
+    <p>Though Oedipus was raised far from Thebes, the shadow of the prophecy loomed over him. His eventual quest to 
+        avoid his fate would tragically lead him right back to the very destiny he sought to escape.
+    </p>
+    <br>
+    <br>
+
+    <h3>Oedipus' Quest</h3>
+
+<table>
+    <tr>
+        <th>Stop</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>Thebes, where Oedipus was born and abandoned due to the prophecy.</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Corinth, where Oedipus was raised.</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Delphi, Oedipus goes seeking answers from the Oracle.</td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Crossroads, Oedipus unknowingly kills his father, fulfilling part of the prophecy.</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>Thebes (Return), Oedipus defeats the Sphinx, becomes king, and marries Jocasta.</td>
+    </tr>
+</table>
+
+<br> 
+<br>   
+
+<label for="guess">Which stop do you think will begin Oedipus' downfall?</label>
+
+    <select name="Guess" id="guess" onchange="showMessage()">
+        <option value="">-- Select an option --</option>
+        <option value="option1">1</option>
+        <option value="option2">2</option>
+        <option value="option3">3</option>
+        <option value="option4">4</option>
+        <option value="option5">5</option>
+</select>
+
+<p id="message"></p>
+
+    <a href="index.html"><button type="button">← Back to Home</button></a>
+    <a href="downfall.html"><button type="button">2. Downfall</button></a>
+
+    <div>
+        <a href="https://www.britannica.com/topic/Oedipus-Greek-mythology"><p>Click here for more on Oedipus!</p></a>
+    </div>
+    
+</body>
+</html>
